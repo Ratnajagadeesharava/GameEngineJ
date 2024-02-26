@@ -31,6 +31,9 @@ namespace engine{
 			}*/
 		#define ENGINE_FATAL(message,...) log_out(LOG_FATAL,__VA_ARGS__);
 		#define ENGINE_ERROR(message,...) log_out(LOG_ERROR,__VA_ARGS__);
+#define ENGINE_INFO(message,...) log_out(LOG_ERROR,__VA_ARGS__);
+#define ENGINE_TRACE(message,...) log_out(LOG_ERROR,__VA_ARGS__);
+#define ENGINE_WARN(message,...) log_out(LOG_ERROR,__VA_ARGS__);
 	};
 }
 
