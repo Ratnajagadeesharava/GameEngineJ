@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/GameEngineJ
+/Engine/x64/Debug
+/TestBed/x64/Debug
+/x64/Debug
