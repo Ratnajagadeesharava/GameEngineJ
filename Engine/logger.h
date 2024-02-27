@@ -15,25 +15,26 @@ namespace engine{
 		LOG_TRACE=5
 
 	};
-	class logger
-	{
-		public:
-			bool initialize_logging();
-			void shutdown_logging();
+		bool initialize_logging();
+		void shutdown_logging();
 
-			ENGINE_API static void log_out(log_level level, const char* message,...);
-			/*
-			#define PRINT_VALUES(...) std::cout << #__VA_ARGS__ << std::endl
+		ENGINE_API void log_output(log_level level, const char* message, ...);
 
-			int main() {
-				PRINT_VALUES(1, 2, "hello", 3.14);
-				return 0;
-			}*/
-		#define ENGINE_FATAL(message,...) log_out(LOG_FATAL,__VA_ARGS__);
-		#define ENGINE_ERROR(message,...) log_out(LOG_ERROR,__VA_ARGS__);
-#define ENGINE_INFO(message,...) log_out(LOG_ERROR,__VA_ARGS__);
-#define ENGINE_TRACE(message,...) log_out(LOG_ERROR,__VA_ARGS__);
-#define ENGINE_WARN(message,...) log_out(LOG_ERROR,__VA_ARGS__);
-	};
+		#define ENGINE_FATAL(message,...) log_output(LOG_FATAL,__VA_ARGS__);
+		#define ENGINE_ERROR(message,...) log_output(LOG_ERROR,__VA_ARGS__);
+		#ifdef INFO_MESSAGES
+		#define ENGINE_INFO(message,...) log_output(LOG_ERROR,__VA_ARGS__);
+		#endif 
+
+		#ifdef DEBUG_MODE
+		#define ENGINE_TRACE(message,...) log_output(LOG_ERROR,__VA_ARGS__);
+		#endif
+
+		#ifdef WARNINGS
+		#define ENGINE_WARN(message,...) log_output(LOG_ERROR,__VA_ARGS__);
+		#endif 
+
+		
+	
 }
 

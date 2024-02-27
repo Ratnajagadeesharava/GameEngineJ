@@ -19,6 +19,12 @@
     <Filter Include="Source Files\core">
       <UniqueIdentifier>{a36513ff-8749-4af7-a53a-525e5d9c9424}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Platform">
+      <UniqueIdentifier>{0251f725-af5f-4b09-8f22-da4709e897cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform">
+      <UniqueIdentifier>{e05a2191-b8cc-414e-8de5-ea83939aa0e1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -36,6 +42,9 @@
     <ClInclude Include="logger.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
+    <ClInclude Include="platform.hpp">
+      <Filter>Header Files\Platform</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp">
@@ -50,5 +59,11 @@
     <ClCompile Include="logger.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
+    <ClCompile Include="platform.cpp">
+      <Filter>Source Files\Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
