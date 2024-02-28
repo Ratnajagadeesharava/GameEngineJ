@@ -69,5 +69,4 @@ STATIC_ASSERT(sizeof(f64) == 8, "Expected f64 to be 8 bytes.");
 #define RELEASE_MODE 1
 #define INFO_MESSAGES 1
 #define WARNINGS 1
-
 #define ENGINENAME "GAME ENGINE J"

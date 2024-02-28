@@ -6,3 +6,5 @@
 /Engine/x64/Debug
 /TestBed/x64/Debug
 /x64/Debug
+/Editor/bin/Debug/net8.0-windows
+/Editor/obj

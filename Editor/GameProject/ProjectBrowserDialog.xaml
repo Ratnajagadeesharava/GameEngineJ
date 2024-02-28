@@ -1,0 +1,24 @@
+﻿<Window x:Class="Editor.GameProject.ProjectBrowserDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Editor.GameProject"
+        mc:Ignorable="d"
+        Title="Game Engine J"
+        Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"  Margin="0,5,0,5">
+                <ToggleButton Content="Open Project" x:Name="openProejctButton" Click="ProejctButton_Click" FontSize="20" Margin="0,0,10,0"/>
+                <ToggleButton Content="New Project" x:Name="newProejctButton" 
+                Click="ProejctButton_Click"
+                              FontSize="20"    />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="libraryContentView"  >
+                <local:OpenProjectView ></local:OpenProjectView>
+                <local:NewProjectView  ></local:NewProjectView>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
