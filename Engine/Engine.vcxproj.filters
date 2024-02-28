@@ -59,7 +59,7 @@
     <ClCompile Include="logger.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
-    <ClCompile Include="platform.cpp">
+    <ClCompile Include="Windows.cpp">
       <Filter>Source Files\Platform</Filter>
     </ClCompile>
   </ItemGroup>

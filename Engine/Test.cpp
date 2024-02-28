@@ -31,14 +31,7 @@ namespace engine {
 		}
 		return DefWindowProcA(hWnd, message, wParam, lParam);
 	}
-	int WINAPI WinMain(
-		HINSTANCE hInstance,
-		HINSTANCE hPrevInstance,
-		LPSTR lpCmdLine,
-		int nCmdShow
-	) {
-
-	}
+	
 	void Test::RunTest()
 	{
 	}

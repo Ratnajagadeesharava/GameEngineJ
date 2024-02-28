@@ -1,16 +1,23 @@
 #pragma once
 #include "TypeDefs.h"
-#ifdef WINDOWS_64_PLTFORM
-#include<Windows.h>
-#include <windowsx.h>
-#include "logger.h"
-
-ENGINE_API char platform_startup(
-	char* application_name,
-	signed int  x,
-	signed int y,
-	unsigned int height,
-	unsigned int width
+namespace engine {
+	class platform_state {
+	public:
+		void* internal_state;
+	
+	};
+	
+	
+	char platform_startup(
+		platform_state* platformSate, 
+		signed int  x,
+		signed int y,
+		unsigned int height,
+		unsigned int width
 	);
-#endif
+	char platfom_shutdown(platform_state* platformState);
+
+	 char platform_pump_messages(platform_state* platformState
+	);
+}
 
