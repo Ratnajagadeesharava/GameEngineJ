@@ -34,5 +34,6 @@ namespace engine {
 	
 	void Test::RunTest()
 	{
+		std::cout << "Hazel Init";
 	}
 }
