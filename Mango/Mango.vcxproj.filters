@@ -19,6 +19,7 @@
     <ClInclude Include="src\Mango\Logger.h">
       <Filter>Mango</Filter>
     </ClInclude>
+    <ClInclude Include="src\Mango\Events\Event.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Mango\Application.cpp">
